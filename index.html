@@ -1,0 +1,764 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b18">
+<meta name="description" content="Ketentuan dan Kebijakan Layanan SMM Panel ZYNQORA. Baca seluruh peraturan sebelum menggunakan layanan kami.">
+<title>Ketentuan Layanan - ZYNQORA</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root {
+    --bg: #080b18;
+    --card: #101629;
+    --card2: #141d35;
+    --primary: #7667ff;
+    --secondary: #21c8ff;
+    --text: #f2f4ff;
+    --muted: #929bb5;
+    --border: rgba(255,255,255,.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 450px;
+    height: 450px;
+    background: #6555ff;
+    filter: blur(180px);
+    opacity: .13;
+    top: -180px;
+    right: -150px;
+    pointer-events: none;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    background: #00bfff;
+    filter: blur(180px);
+    opacity: .09;
+    bottom: -150px;
+    left: -150px;
+    pointer-events: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1050px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* NAVBAR */
+
+.navbar {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+    background: rgba(8,11,24,.85);
+    backdrop-filter: blur(15px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 21px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg,var(--primary),var(--secondary));
+    color: white;
+    box-shadow: 0 0 25px #7667ff55;
+}
+
+.logo span {
+    background: linear-gradient(90deg,#fff,#9b91ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.nav-label {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 85px 15px 55px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    border: 1px solid #7667ff55;
+    border-radius: 30px;
+    background: #7667ff15;
+    color: #aaa1ff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(30px,6vw,53px);
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    background: linear-gradient(90deg,#8375ff,#28caff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.hero-line {
+    width: 75px;
+    height: 4px;
+    border-radius: 10px;
+    background: linear-gradient(90deg,var(--primary),var(--secondary));
+    margin: 30px auto 0;
+}
+
+/* INFO */
+
+.info-box {
+    background: linear-gradient(120deg,#7667ff1c,#21c8ff0b);
+    border: 1px solid #7667ff45;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.info-icon {
+    color: #a79cff;
+    font-size: 23px;
+}
+
+.info-box strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.info-box p {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+/* CONTENT */
+
+.section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 28px;
+    margin-bottom: 20px;
+    transition: .3s;
+    scroll-margin-top: 95px;
+    animation: fadeIn .7s ease both;
+}
+
+.section:hover {
+    border-color: #7667ff70;
+    transform: translateY(-2px);
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid var(--border);
+}
+
+.number {
+    width: 43px;
+    height: 43px;
+    min-width: 43px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg,#7667ff,#438cff);
+    font-weight: 900;
+    font-size: 15px;
+    box-shadow: 0 5px 20px #7667ff30;
+}
+
+.section-heading h2 {
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.section-heading small {
+    color: var(--muted);
+    font-size: 11px;
+    display: block;
+}
+
+.rules {
+    list-style: none;
+    counter-reset: rule;
+}
+
+.rules li {
+    counter-increment: rule;
+    position: relative;
+    padding-left: 38px;
+    margin-bottom: 17px;
+    color: #b8c0d5;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.rules li::before {
+    content: counter(rule, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #9286ff;
+    font-size: 11px;
+    font-weight: 800;
+    background: #7667ff18;
+    border: 1px solid #7667ff35;
+    width: 26px;
+    height: 25px;
+    border-radius: 7px;
+    display: grid;
+    place-items: center;
+}
+
+.rules li strong {
+    color: #f0efff;
+    font-weight: 700;
+}
+
+.highlight {
+    color: #a99fff;
+    font-weight: 700;
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 55px;
+    border-top: 1px solid var(--border);
+    padding: 35px 15px;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg,#8375ff,#28caff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.footer p {
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+.footer .copyright {
+    margin-top: 20px;
+    color: #65708d;
+}
+
+/* BUTTON TOP */
+
+.top-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 22px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 13px;
+    background: linear-gradient(135deg,var(--primary),#398dff);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 5px 25px #7667ff55;
+    display: none;
+    z-index: 99;
+}
+
+.top-btn.show {
+    display: block;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+    .container {
+        width: 92%;
+    }
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-label {
+        font-size: 9px;
+    }
+
+    .hero {
+        padding: 65px 5px 40px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .section {
+        padding: 20px 16px;
+        border-radius: 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 15px;
+    }
+
+    .rules li {
+        font-size: 12px;
+        padding-left: 33px;
+    }
+
+    .info-box {
+        padding: 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container nav-content">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+            <span>ZYNQORA</span>
+        </div>
+        <div class="nav-label">OFFICIAL POLICY</div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero container">
+    <div class="hero-badge">
+        <i class="fa-solid fa-shield-halved"></i>
+        OFFICIAL TERMS & CONDITIONS
+    </div>
+
+    <h1>Ketentuan &<br><span>Kebijakan Layanan</span></h1>
+
+    <p>
+        Silakan baca dan pahami seluruh ketentuan layanan
+        SMM Panel ZYNQORA sebelum melakukan transaksi.
+        Dengan menggunakan layanan kami, Anda dianggap
+        telah menyetujui seluruh peraturan yang berlaku.
+    </p>
+
+    <div class="hero-line"></div>
+</header>
+
+<main class="container">
+
+    <!-- INFO -->
+    <div class="info-box">
+        <div class="info-icon">
+            <i class="fa-solid fa-circle-info"></i>
+        </div>
+        <div>
+            <strong>Informasi Penting</strong>
+            <p>
+                Setiap pengguna wajib membaca ketentuan ini.
+                ZYNQORA berhak melakukan perubahan kebijakan
+                sewaktu-waktu sesuai kebutuhan operasional.
+            </p>
+        </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <section class="section" id="umum">
+        <div class="section-heading">
+            <div class="number">01</div>
+            <div>
+                <h2>UMUM</h2>
+                <small>General Terms & Conditions</small>
+            </div>
+        </div>
+
+        <ol class="rules">
+            <li>
+                Dengan mendaftar di Bot SMM ZYNQORA,
+                Anda secara otomatis telah menyetujui
+                ketentuan layanan yang kami buat.
+                Ketentuan layanan dapat berubah sewaktu-waktu
+                tanpa pemberitahuan sebelumnya.
+            </li>
+
+            <li>
+                Layanan yang disediakan mengikuti data dari
+                server utama. Kami tidak menjamin keakuratan
+                100% dan tidak bertanggung jawab atas perbedaan
+                yang mungkin terjadi antara data yang ditampilkan
+                dan kondisi aktual. Pengguna memahami bahwa
+                variasi atau perbedaan tersebut bukan merupakan
+                dasar klaim atau permintaan refund.
+            </li>
+
+            <li>
+                ZYNQORA berhak mengubah peraturan yang berlaku
+                tanpa pemberitahuan sebelumnya. Kami mengimbau
+                Anda untuk membaca ketentuan sebelum melakukan
+                pemesanan atau pembelian agar selalu mengetahui
+                perubahan terbaru.
+            </li>
+
+            <li>
+                ZYNQORA tidak bertanggung jawab apabila Anda
+                mengalami suspend akun atau penghapusan kiriman
+                yang dilakukan oleh Instagram, TikTok, Twitter,
+                Facebook, YouTube, dan platform lainnya.
+            </li>
+        </ol>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="section" id="layanan">
+        <div class="section-heading">
+            <div class="number">02</div>
+            <div>
+                <h2>LAYANAN</h2>
+                <small>Service Policy</small>
+            </div>
+        </div>
+
+        <ol class="rules">
+            <li>
+                Pesanan diproses secara otomatis melalui sistem
+                API dan langsung diteruskan ke server atau
+                penyedia layanan pihak ketiga.
+            </li>
+
+            <li>
+                Waktu proses paling cepat adalah <strong>1 menit</strong>
+                dan paling lambat <strong>3 hari atau lebih</strong>,
+                tergantung kondisi server penyedia.
+            </li>
+
+            <li>
+                Kami dapat membantu meneruskan permintaan percepatan
+                pesanan ke server apabila dalam <strong>1 hari</strong>
+                pesanan belum diterima atau mengalami keterlambatan.
+            </li>
+
+            <li>
+                Kami dapat membantu mengajukan pembatalan pesanan
+                ke server apabila dalam <strong>3 hari atau lebih</strong>
+                pesanan belum diterima dan mengalami kendala.
+                Pembatalan tetap bergantung pada persetujuan server.
+            </li>
+
+            <li>
+                Kami tidak memberikan jaminan bahwa setiap layanan
+                akan bertahan selamanya. Kami tidak bertanggung jawab
+                atas penurunan atau perubahan layanan yang terjadi
+                setelah pesanan selesai dan tidak ada pengembalian dana,
+                kecuali sesuai ketentuan garansi yang berlaku.
+            </li>
+
+            <li>
+                Kami dapat memberikan garansi pada layanan yang
+                berlabel <span class="highlight">Garansi ♻️ atau R</span>,
+                apabila terjadi pengurangan dalam kurun waktu
+                garansi yang telah ditentukan.
+            </li>
+
+            <li>
+                Kami tidak dapat memberikan garansi berupa isi ulang
+                atau pengembalian dana pada layanan yang tidak
+                berlabel Garansi ♻️ atau R.
+            </li>
+
+            <li>
+                Kami tidak dapat memberikan garansi berupa isi ulang
+                atau pengembalian dana pada pesanan dengan status
+                <strong>Partial</strong>.
+            </li>
+
+            <li>
+                Kami tidak dapat memberikan garansi berupa isi ulang
+                atau pengembalian dana pada pesanan yang berkurang
+                melewati jumlah awal yang tertera pada saat
+                pemesanan dilakukan.
+            </li>
+
+            <li>
+                Kami tidak dapat membatalkan pesanan yang baru saja
+                dibuat karena pesanan dapat langsung diproses
+                oleh sistem otomatis.
+            </li>
+
+            <li>
+                Kami tidak dapat membatalkan pesanan dan tidak menerima
+                komplain untuk pesanan ganda pada target yang sama
+                dalam waktu bersamaan atau ketika pesanan sebelumnya
+                belum selesai.
+            </li>
+
+            <li>
+                Kami tidak dapat membatalkan dan tidak menerima
+                komplain untuk pesanan yang targetnya di-private,
+                username diganti, atau target dihapus.
+            </li>
+
+            <li>
+                Kami tidak dapat membatalkan pesanan begitu saja,
+                kecuali pembatalan dilakukan oleh server atau
+                mendapatkan persetujuan dari pihak server.
+            </li>
+
+            <li>
+                Kami tidak melayani pesanan yang mengandung unsur
+                SARA, pornografi, perjudian, kekerasan, penipuan,
+                atau aktivitas ilegal lainnya. Layanan diproses
+                otomatis melalui API dan diteruskan ke penyedia
+                pihak ketiga, sehingga tidak seluruh pesanan dapat
+                diperiksa atau teridentifikasi sebelum diproses.
+                Apabila di kemudian hari ditemukan pesanan yang
+                melanggar ketentuan, kami berhak menghentikan
+                layanan lanjutan atau membatalkan pesanan terkait
+                tanpa pemberitahuan terlebih dahulu.
+            </li>
+        </ol>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="section" id="pesanan">
+        <div class="section-heading">
+            <div class="number">03</div>
+            <div>
+                <h2>KETENTUAN MEMBUAT PESANAN BARU</h2>
+                <small>Order Guidelines</small>
+            </div>
+        </div>
+
+        <ol class="rules">
+            <li>
+                Jika ingin membuat pesanan dengan target yang sama
+                dengan pesanan yang sudah pernah dipesan sebelumnya,
+                mohon menunggu sampai pesanan sebelumnya selesai
+                diproses.
+            </li>
+
+            <li>
+                Jika terjadi kesalahan atau mendapatkan pesan gagal
+                yang kurang jelas, silakan hubungi Admin untuk
+                mendapatkan informasi lebih lanjut.
+            </li>
+
+            <li>
+                Jangan mengganti username atau menghapus target
+                ketika pesanan sedang dalam proses.
+            </li>
+        </ol>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section class="section" id="pembayaran">
+        <div class="section-heading">
+            <div class="number">04</div>
+            <div>
+                <h2>PEMBAYARAN & KEBIJAKAN PENGEMBALIAN</h2>
+                <small>Payment & Refund Policy</small>
+            </div>
+        </div>
+
+        <ol class="rules">
+            <li>
+                Deposit dan bonus yang sudah masuk tidak dapat
+                diuangkan kembali atau di-refund. Saldo tersebut
+                hanya dapat digunakan untuk membeli layanan
+                yang tersedia di SMM ZYNQORA.
+            </li>
+        </ol>
+    </section>
+
+    <!-- SECTION 5 -->
+    <section class="section" id="lainnya">
+        <div class="section-heading">
+            <div class="number">05</div>
+            <div>
+                <h2>LAIN-LAIN</h2>
+                <small>Additional Terms</small>
+            </div>
+        </div>
+
+        <ol class="rules">
+            <li>
+                Segala bentuk komplain dan konfirmasi top up
+                akan ditangani oleh tim Customer Support kami.
+            </li>
+
+            <li>
+                Mohon menghargai Customer Support kami dengan
+                berbicara secara sopan dan tidak melakukan ancaman.
+                Kami berhak menolak member yang tidak memenuhi
+                ketentuan perilaku ini di panel kami.
+            </li>
+
+            <li>
+                Member yang sebelumnya pernah di-suspend tidak
+                diperbolehkan mendaftar ulang menggunakan data baru.
+                Jika ditemukan pelanggaran tersebut, kami berhak
+                melakukan suspend kembali. Saldo yang tersisa
+                dapat dianggap hangus sesuai ketentuan yang berlaku.
+            </li>
+        </ol>
+    </section>
+
+    <!-- END INFO -->
+    <div class="info-box">
+        <div class="info-icon">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <div>
+            <strong>Terima Kasih Telah Menggunakan ZYNQORA</strong>
+            <p>
+                Dengan menggunakan layanan SMM ZYNQORA,
+                Anda menyatakan telah membaca dan memahami
+                ketentuan serta kebijakan layanan yang berlaku.
+            </p>
+        </div>
+    </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-logo">ZYNQORA</div>
+    <p>Social Media Marketing Panel</p>
+    <p>Trusted Service • Fast Process • Professional Support</p>
+
+    <p class="copyright">
+        &copy; <span id="year"></span> ZYNQORA.
+        All Rights Reserved.
+    </p>
+</footer>
+
+<!-- BACK TO TOP -->
+<button class="top-btn" id="topBtn" onclick="scrollToTop()">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 300) {
+        topBtn.classList.add("show");
+    } else {
+        topBtn.classList.remove("show");
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+</script>
+
+</body>
+</html>
